@@ -1,21 +1,22 @@
-//db/dbconnect.js
-import { Client } from "pg";
+// db/dbconnect.js
+import pkg from 'pg';
+import dotenv from 'dotenv';
+
+// Load environment variables
+dotenv.config();
+
+const { Client } = pkg;
 
 const client = new Client({
-    host:"localhost",
-    user: "postgres",
-    port: 5433,
-    password: "Sona@2006",
-    database: "Intern-Hub"
-})
+  host: process.env.PGHOST,
+  user: process.env.PGUSER,
+  port: process.env.PGPORT,
+  password: process.env.PGPASSWORD,
+  database: process.env.PGDATABASE,
+});
 
 client.connect()
-  .then(() => console.log("✅ Connected to PostgreSQL "+client.database))
+  .then(() => console.log(`✅ Connected to PostgreSQL database: ${client.database}`))
   .catch(err => console.error("❌ DB connection error:", err));
 
-export default client
-
-
-
-
-
+export default client;
