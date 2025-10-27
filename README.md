@@ -1,13 +1,15 @@
-
 # 🚀 Internship Portal - Full Stack Application
 
 A modern Y Combinator-inspired internship portal connecting students with startup opportunities. Built with React, Node.js, Express, and PostgreSQL.
 
-[![License: MIT](https://img.shields.://opensource.org/licenses/MITmg.shields.io of Contents
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## 📋 Table of Contents
 
 - [About](#about)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [Database Schema](#database-schema)
 - [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
@@ -76,6 +78,18 @@ The Internship Portal is a comprehensive platform designed to bridge the gap bet
 - **dotenv** - Environment variable management
 - **cors** - Cross-origin resource sharing
 
+## 🗄️ Database Schema
+
+The application uses a PostgreSQL relational database with the following entity relationship model:
+
+![Database Schema](./frontend/public/DatabaseModels.png)
+
+### Key Relationships:
+- **Users** can be either Students or Startups (one-to-one with profiles)
+- **Startups** can post multiple **Internships** (one-to-many)
+- **Students** can apply to multiple **Internships** through **Applications** (many-to-many)
+- **Applications** track the relationship between Students, Internships, and Startups
+
 ## 📁 Project Structure
 
 ```
@@ -122,6 +136,9 @@ internship-portal/
 │   ├── index.js               # Server entry point
 │   ├── package.json
 │   └── .env
+│
+├── images/                      # Project images and diagrams
+│   └── database-model.png      # Database ER diagram
 │
 └── README.md                   # This file
 ```
@@ -355,9 +372,15 @@ VITE_API_BASE_URL=http://localhost:5000/api
 *(Add screenshots of your application here)*
 
 ### Student Dashboard
-![Student Dashboard](screenshots Internship Listings
-![Internship Listings]( Tracking
-![Application Tracking](screenshots/
+![Student Dashboard](./frontend/public/StudentDashboard.png)
+
+### Internship Listings
+![Internship Listings](./frontend/public/InternhipListing.png)
+
+### Application Tracking
+![Application Tracking](./frontend/public/ApplicationTracking.png)
+
+## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -373,7 +396,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- **Manne Rithvik** [rithvik-2006](https://github.com/rithvik-2006)
 
 ## 🙏 Acknowledgments
 
@@ -388,5 +411,6 @@ For questions or support, please contact:
 - Email: your.email@example.com
 - GitHub: [@yourusername](https://github.com/yourusername)
 
-***
+---
 
+**Made with ❤️ for connecting students with amazing startup opportunities**
