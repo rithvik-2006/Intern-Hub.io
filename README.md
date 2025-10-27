@@ -2,7 +2,7 @@
 
 A modern Y Combinator-inspired internship portal connecting students with startup opportunities. Built with React, Node.js, Express, and PostgreSQL.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## 📋 Table of Contents
 
@@ -395,8 +395,8 @@ Contributions are welcome! Please follow these steps:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Authors
-
-- **Manne Rithvik** [rithvik-2006](https://github.com/rithvik-2006)
+ 
+[**Manne Rithvik 🙂**](https://github.com/rithvik-2006)
 
 ## 🙏 Acknowledgments
 
