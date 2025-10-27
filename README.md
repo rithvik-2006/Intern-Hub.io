@@ -369,7 +369,6 @@ VITE_API_BASE_URL=http://localhost:5000/api
 
 ## 📸 Screenshots
 
-*(Add screenshots of your application here)*
 
 ### Student Dashboard
 ![Student Dashboard](./frontend/public/StudentDashboard.png)
