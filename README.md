@@ -1,4 +1,3 @@
-Based on the comprehensive internship portal application we've built throughout this conversation, here's a complete README for your project:
 
 # 🚀 Internship Portal - Full Stack Application
 
